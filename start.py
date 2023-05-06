@@ -16,7 +16,7 @@ target = np.concatenate(( np.zeros(100), np.ones(100), (np.ones(100)+1) ))
    
 #이미지 전처리를 진행하는 함수
 def img_preprocessing(img):
-    temp = cv2.cvtColor(img, 0)       # 흑백 이미지로 로드
+    temp = cv2.cvtColor(img, 0)       # 흑백 이미지로 변환
     temp = cv2.resize(temp, (10,10))  # 사이즈 변경
     return temp
 
