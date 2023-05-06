@@ -1,4 +1,4 @@
-!
+!wget https://bit.ly/fruits_300_data -O fruits_300.npy
 import pandas as pd
 import numpy as np
 import cv2
