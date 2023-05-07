@@ -56,3 +56,16 @@ print(model.predict( [test_scaled[i]] )) # 샘플 5개의 종류 예측
 plt.imshow(test_input[i].reshape(100,100,4), cmap='gray_r') 
 plt.axis("off")
 plt.show()
+
+# 각 Class별 인덱스
+index = [ x for x, y in enumerate(model.predict( test_scaled )) if y == 2 ] 
+
+# index에 저장된 번호의 사진을 
+n = 0;
+fig, axs = plt.subplots(5,5,figsize=(5,5))
+for i in range(5): 
+    for j in range(5): 
+        if n >= len(index) : break
+        axs[i,j].imshow(test_input[index[i*5+j]].reshape(100,100,4), cmap='gray_r')
+        axs[i,j].axis('off') 
+        n = n + 1
