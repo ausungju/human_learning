@@ -60,7 +60,7 @@ plt.show()
 # 각 Class별 인덱스
 index = [ x for x, y in enumerate(model.predict( test_scaled )) if y == 2 ] 
 
-# index에 저장된 번호의 사진을 
+# index에 저장된 번호의 사진을 출력
 n = 0;
 fig, axs = plt.subplots(5,5,figsize=(5,5))
 for i in range(5): 
