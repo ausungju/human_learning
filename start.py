@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 
 #CSV파일 불러오기
-#data = pd.read_csv("http://bit.ly/fish_csv_data")
+#data = pd.read_csv("")
    
 #fish의 종류를 타깃 데이터, 나머지 특성을 입력 데이터
 #img_list = data['URL'].to_numpy()
