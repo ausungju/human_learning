@@ -37,7 +37,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 
-#훈련가능하게 데이터변환
+#2차원배열로 변환
 dataset_size = input.shape[0]
 input = input.reshape(dataset_size,-1)
 
